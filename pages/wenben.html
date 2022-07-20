@@ -14,107 +14,74 @@
 	<body>
 		<h1>笔记</h1>
 		<hr />
-		<h2 id="1">格式化文本</h2>
-		<b>This text is bold</b>
-		<br />
-		<strong>This text is strong</strong>
-		<br />
-		<big>This text is big</big>
-		<br />
-		<em>This text is emphasized</em>
-		<br />
-		<i>This text is italic</i>
-		<br />
-		<small>This text is small</small>
-		<br />
-		This text contains
-		<sub>subscript</sub>
-		<br />
-		This text contains
-		<sup>superscript</sup>
-		<hr />
-		<h2 id="2">预格式文本</h2>
-		<pre>
-这是
-预格式文本。
-它保留了      空格
-和换行。
-</pre>
-
-		<p>pre 标签很适合显示计算机代码：</p>
-
-		<pre>
-for i = 1 to 10
-     print i
-next i
-</pre>
-		<hr />
-		<h2>“计算机输出”标签</h2>
-		<code>Computer code</code>
-		<br />
-		<kbd>Keyboard input</kbd>
-		<br />
-		<tt>Teletype text</tt>
-		<br />
-		<samp>Sample text</samp>
-		<br />
-		<var>Computer variable</var>
-		<br />
-		<p>
-			<b>注释：</b>这些标签常用于显示计算机/编程代码。
-		</p>
-		<hr />
-		<h2>缩写</h2>
-		<abbr title="etcetera">etc.</abbr>
-		<br />
-		<acronym title="World Wide Web">WWW</acronym>
-		<br />
-		<abbr title="Qiu Yiyang">QYy</abbr>
-		<br />
-		<acronym title="qiuyiyang">qiu</acronym>
-
-		<p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
-
-		<p>仅对于 IE 5 中的 acronym 元素有效。</p>
-
-		<p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
-		<hr />
-		<h2>文字方向</h2>
-		<p>
-			如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
-		</p>
-
-		<bdo dir="rtl">
-			<!--rtl = right to left-->
-			Here is some Hebrew text
-		</bdo>
-		<br />
-		<abbr title="right to left">rtl</abbr>
-
-		<hr />
-		<h2>块引用</h2>
-		这是长的引用：
-		<blockquote>
-			这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。
-		</blockquote>
-
-		这是短的引用：
-		<q id="q">
-			这是短的引用。
-		</q>
-
-		<p>
-			使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
-		</p>
-
-		<hr />
-		<h2>删除字效果和插入字效果</h2>
-		<p>一打有 <del>二十</del> <ins>十二</ins> 件。</p>
-		<p><ins>大多数浏览器会改写为删除文本和下划线文本。</ins></p>
-		<p><del>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。</del></p>
+		<div style="text-align: center;">
+			<a href="#1">引用、引用和术语定义</a>
+			<br />
+			<a href="#2">“计算机输出”标签</a>
+			<br />
+			<a href="#3">格式化文本</a>
+			<br />
+			<a href="#4">预格式文本</a>
+			<br />
+			<a href="#5">缩写</a>
+			<br />
+			<a href="#6">文字方向</a>
+			<br />
+			<a href="#7">块引用</a>
+			<br />
+			<a href="#8">删除字效果和插入字效果</a>
+			<br />
+			<a href="#9">“文本格式化”标签</a>
+			<br />
+			<a href="#10">HTML 教程延伸阅读：改变文本的外观和含义</a>
+			<br />
+		</div>
 		<hr />
 		<div>
-			<h2>文本格式化标签</h2>
+			<h2 id="1">引用、引用和术语定义</h2>
+
+			<table class="dataintable">
+				<tr>
+					<th style="width:30%">标签</th>
+					<th style="width:70%">描述</th>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_abbr.asp">&lt;abbr&gt;</a></td>
+					<td>定义缩写。</td>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_acronym.asp">&lt;acronym&gt;</a></td>
+					<td>定义首字母缩写。</td>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_address.asp">&lt;address&gt;</a></td>
+					<td>定义地址。</td>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_bdo.asp">&lt;bdo&gt;</a></td>
+					<td>定义文字方向。</td>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_blockquote.asp">&lt;blockquote&gt;</a></td>
+					<td>定义长的引用。</td>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_q.asp">&lt;q&gt;</a></td>
+					<td>定义短的引用语。</td>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_phrase_elements.asp">&lt;cite&gt;</a></td>
+					<td>定义引用、引证。</td>
+				</tr>
+				<tr>
+					<td><a href="/tags/tag_phrase_elements.asp">&lt;dfn&gt;</a></td>
+					<td>定义一个定义项目。</td>
+				</tr>
+			</table>
+		</div>
+		<hr />
+		<div>
+			<h2 id="9">“文本格式化”标签</h2>
 			<table class="dataintable">
 				<tr>
 					<th style="width:30%">标签</th>
@@ -174,10 +141,22 @@ next i
 				</tr>
 			</table>
 		</div>
-
 		<hr />
 		<div>
-			<h2>“计算机输出”标签</h2>
+			<h2 id="2">“计算机输出”标签</h2>
+			<code>Computer code</code>
+			<br />
+			<kbd>Keyboard input</kbd>
+			<br />
+			<tt>Teletype text</tt>
+			<br />
+			<samp>Sample text</samp>
+			<br />
+			<var>Computer variable</var>
+			<br />
+			<p>
+				<b>注释：</b>这些标签常用于显示计算机/编程代码。
+			</p>
 
 			<table class="dataintable">
 				<tr>
@@ -222,52 +201,91 @@ next i
 				</tr>
 			</table>
 		</div>
+		<hr />
+		<h2 id="3">格式化文本</h2>
+		<b>This text is bold</b>
+		<br />
+		<strong>This text is strong</strong>
+		<br />
+		<big>This text is big</big>
+		<br />
+		<em>This text is emphasized</em>
+		<br />
+		<i>This text is italic</i>
+		<br />
+		<small>This text is small</small>
+		<br />
+		This text contains
+		<sub>subscript</sub>
+		<br />
+		This text contains
+		<sup>superscript</sup>
+		<hr />
+		<h2 id="4">预格式文本</h2>
+		<pre>
+这是
+预格式文本。
+它保留了      空格
+和换行。
+</pre>
+
+		<p>pre 标签很适合显示计算机代码：</p>
+
+		<pre>
+for i = 1 to 10
+     print i
+next i
+</pre>
+		<hr />
+		<h2 id="5">缩写</h2>
+		<abbr title="etcetera">etc.</abbr>
+		<br />
+		<acronym title="World Wide Web">WWW</acronym>
+		<br />
+		<abbr title="Qiu Yiyang">QYy</abbr>
+		<br />
+		<acronym title="qiuyiyang">qiu</acronym>
+
+		<p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
+
+		<p>仅对于 IE 5 中的 acronym 元素有效。</p>
+
+		<p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
+		<hr />
+		<h2 id="6">文字方向</h2>
+		<p>
+			如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
+		</p>
+
+		<bdo dir="rtl">
+			<!--rtl = right to left-->
+			Here is some Hebrew text
+		</bdo>
+		<br />
+		<abbr title="right to left">rtl</abbr>
+		<hr />
+		<h2 id="7">块引用</h2>
+		这是长的引用：
+		<blockquote>
+			这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。
+		</blockquote>
+
+		这是短的引用：
+		<q>
+			这是短的引用。
+		</q>
+
+		<p>
+			使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
+		</p>
 
 		<hr />
-		<div>
-			<h2>引用、引用和术语定义</h2>
-
-			<table class="dataintable">
-				<tr>
-					<th style="width:30%">标签</th>
-					<th style="width:70%">描述</th>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_abbr.asp">&lt;abbr&gt;</a></td>
-					<td>定义缩写。</td>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_acronym.asp">&lt;acronym&gt;</a></td>
-					<td>定义首字母缩写。</td>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_address.asp">&lt;address&gt;</a></td>
-					<td>定义地址。</td>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_bdo.asp">&lt;bdo&gt;</a></td>
-					<td>定义文字方向。</td>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_blockquote.asp">&lt;blockquote&gt;</a></td>
-					<td>定义长的引用。</td>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_q.asp">&lt;q&gt;</a></td>
-					<td>定义短的引用语。</td>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_phrase_elements.asp">&lt;cite&gt;</a></td>
-					<td>定义引用、引证。</td>
-				</tr>
-				<tr>
-					<td><a href="/tags/tag_phrase_elements.asp">&lt;dfn&gt;</a></td>
-					<td>定义一个定义项目。</td>
-				</tr>
-			</table>
-		</div>
+		<h2 id="8">删除字效果和插入字效果</h2>
+		<p>一打有 <del>二十</del> <ins>十二</ins> 件。</p>
+		<p><ins>大多数浏览器会改写为删除文本和下划线文本。</ins></p>
+		<p><del>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。</del></p>
 		<hr />
-		<h1>HTML 教程延伸阅读：改变文本的外观和含义</h1>
+		<h1 id="10">HTML 教程延伸阅读：改变文本的外观和含义</h1>
 
 		<div id="tpn">
 			<ul class="prenext">
@@ -338,6 +356,14 @@ next i
 
 			<p class="tip"><span>提示：</span>请记住这些物理样式标签对紧接的文本产生的强烈效果。要实现在整个文档范围内对文本显示的全面控制，请使用样式表。</p>
 		</div>
+		<hr />
+		<address style="text-align: left;">本站由<a href="mailto:2213090041@qq.com"
+				style="text-decoration: none">邱一阳</a>制作<br />
+			访问：<br />
+			我的<a href="https://github.com/qiuyiyang0521" style="text-decoration: none"
+				target="_blank">Github主页</a><br />
+			我的<a href="pages/main.html" style="text-decoration: none" target="_blank">笔记</a><br />
+		</address>
 	</body>
 
 </html>
